@@ -4,7 +4,7 @@ import { decrement, increment, reset } from '../redux/counterSlice';
 import { store } from '../redux/store';
 
 function Counter() {
-  const [range,setRange]=useState("")
+  const [range,setRange]=useState(1)
   const dispatch=useDispatch();
   const count = useSelector(state=>state.counter.value)
   console.log("====range===",range)
